@@ -1,20 +1,22 @@
-1.����
+1.纵向
 
-    �����----���ݲ�----��ʾ��
+    网络层----数据层----表示层
 
-        ����㣺AFNewworking�����ܣ�����API,ͨ���첽����������ѹ���ȷ�ʽ����������߲�����
+        网络层：AFNewworking网络框架，调用API,通过异步请求提高客户端流畅度，post请求提高数据的安全性，利用HTTP缓存机制尽量减少网络请求次数以缓解服务器的高并发；
+            
+        数据层：将数据分类，利用CoreData持久化存储长期不变的数据，优先从本地加载数据，以减少对服务器的访问频率；
 
-        ���ݲ㣺CoreData�־û��洢���ݣ��������ݻ��棬���ͶԷ������ķ���Ƶ�ʣ�
+        表示层：Masonry库对界面进行布局以自适应不同设备；
 
-        ��ʾ�㣺Masonry��Խ�����в���������Ӧ��ͬ�豸��
-
-2.����
+2.横向
 
     Model---View---Controller
 
-        Model����װ���ݣ�ʵ��ҵ���߼���
+        Model：封装数据，实现业务逻辑；
 
-        View��  չʾ���ݣ��ṩ������
+        View：  展示数据，提供交互；
 
-        Controller������Model����View��֮������ݽ����������û�������
+        Controller：控制Model层与View层之间的数据交换，处理用户操作；
+        
+  
 
